@@ -24,8 +24,8 @@ function firstQuestion() {
         title: CONFIG.introTitle,
         text: CONFIG.introDesc,
         imageUrl: 'img/logi.gif',
-        imageWidth: 300,
-        imageHeight: 300,
+        imageWidth: 150,
+        imageHeight: 150,
         background: '#fff url("img/iput-bg.jpg")',
         imageAlt: 'Custom image',
         confirmButtonText: CONFIG.btnIntro
@@ -102,7 +102,7 @@ $('#yes').click(function() {
     Swal.fire({
         title: CONFIG.question,
         html: true,
-        width: 900,
+        width: 150,
         padding: '3em',
         html: "<input type='text' class='form-control' id='txtReason' onmousemove=textGenerate()  placeholder='Whyyy'>",
         background: '#fff url("img/iput-bg.jpg")',
@@ -118,7 +118,7 @@ $('#yes').click(function() {
     }).then((result) => {
         if (result.value) {
             Swal.fire({
-                width: 900,
+                width: 150,
                 confirmButtonText: CONFIG.btnAccept,
                 background: '#fff url("img/iput-bg.jpg")',
                 title: CONFIG.mess,
